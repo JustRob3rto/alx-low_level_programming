@@ -17,7 +17,8 @@
  */
 int main(void)
 {
-	int first_digit, second_digit;
+	int first_digit;
+	int second_digit;
 
 	for (first_digit = 0; first_digit <= 8; first_digit++)
 	{
