@@ -17,8 +17,7 @@
  */
 int main(void)
 {
-	int first_digit;
-	int second_digit;
+	int first_digit, second_digit;
 
 	for (first_digit = 0; first_digit <= 8; first_digit++)
 	{
@@ -27,7 +26,7 @@ int main(void)
 			putchar((first_digit % 10) + '0');
 			putchar((second_digit % 10) + '0');
 
-			if (first_digit != 8 || second_digit != 9)
+			if (!(first_digit == 8 && second_digit == 9))
 			{
 				putchar(',');
 				putchar(' ');
@@ -37,6 +36,6 @@ int main(void)
 
 	putchar('\n');
 
-	return (0);
+	return 0;
 }
 
